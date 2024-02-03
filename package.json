@@ -1,0 +1,65 @@
+{
+  "name": "pwa-starter",
+  "description": "A PWA (Progressive Web App) Starter Template built with Vite, React, TypeScript, TailwindCSS, Chad UI, and more.",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Damir Vazgird",
+    "email": "damir@withpulp.com",
+    "url": "https://damir.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dvzrd/pwa-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dvzrd/pwa-starter/issues",
+    "email": "damir@withpulp.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint src --max-warnings=0",
+    "typecheck": "tsc --project tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "chad-ui": "^1.0.5",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.321.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.50.0",
+    "tailwind-merge": "^2.2.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.1",
+    "@testing-library/react": "^14.2.1",
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.52",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "@vitest/ui": "^1.2.2",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.14.1",
+    "happy-dom": "^12.10.3",
+    "postcss": "^8.4.33",
+    "prettier": "3.1.1",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.2.2"
+  }
+}
