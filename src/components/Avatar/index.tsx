@@ -1,4 +1,4 @@
-import { classNames } from 'utils'
+import { cn } from 'chad-ui'
 
 type Size = 'small' | 'medium' | 'large'
 
@@ -17,13 +17,13 @@ const sizes: Record<Size, string> = {
 const EmptyAvatar = ({ size = 'medium' }: Pick<AvatarProps, 'size'>) => (
   <span
     data-testid="empty-avatar"
-    className={classNames(
+    className={n(
       'inline-block overflow-hidden bg-gray-100 rounded-full',
       sizes[size]
     )}
   >
     <svg
-      className="h-full w-full text-gray-300"
+      className="size-full text-gray-300"
       fill="currentColor"
       viewBox="0 0 24 24"
     >
@@ -39,7 +39,7 @@ export default function Avatar({ size = 'medium', src, alt }: AvatarProps) {
 
   return (
     <img
-      className={classNames('inline-block rounded-full', sizes[size])}
+      className={cn('inline-block rounded-full', sizes[size])}
       src={src}
       alt={alt}
     />
